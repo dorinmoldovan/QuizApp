@@ -12,4 +12,12 @@
     <string name="question_3">3. Can you create an activity using Android without a user interface?</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
+    <string name="question_4">4. Specify a language that can be used for the development of Android apps.</string>
+    <string name="java">JAVA</string>
+    <string name="kotlin">KOTLIN</string>
+    <string name="c">C/C++</string>
+    <string name="c_sharp">C#</string>
+    <string name="basic">BASIC</string>
+    <string name="corona">CORONA/LUA</string>
+    <string name="phonegap">PHONEGAP</string>
 </resources>

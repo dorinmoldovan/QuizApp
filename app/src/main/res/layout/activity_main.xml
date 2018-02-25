@@ -33,17 +33,17 @@
         <RadioGroup
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-medium"
             android:layout_marginLeft="@dimen/text_margin"
             android:layout_marginRight="@dimen/text_margin"
+            android:fontFamily="sans-serif-medium"
             android:orientation="vertical">
 
             <RadioButton
                 android:id="@+id/id_google"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-smallcaps"
                 android:checked="true"
+                android:fontFamily="sans-serif-smallcaps"
                 android:text="@string/google"
                 android:textSize="@dimen/text_size" />
 
@@ -51,8 +51,8 @@
                 android:id="@+id/id_amazon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-smallcaps"
                 android:checked="false"
+                android:fontFamily="sans-serif-smallcaps"
                 android:text="@string/amazon"
                 android:textSize="@dimen/text_size" />
 
@@ -60,8 +60,8 @@
                 android:id="@+id/id_facebook"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-smallcaps"
                 android:checked="false"
+                android:fontFamily="sans-serif-smallcaps"
                 android:text="@string/facebook"
                 android:textSize="@dimen/text_size" />
 
@@ -69,8 +69,8 @@
                 android:id="@+id/id_microsoft"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-smallcaps"
                 android:checked="false"
+                android:fontFamily="sans-serif-smallcaps"
                 android:text="@string/microsoft"
                 android:textSize="@dimen/text_size" />
 
@@ -89,9 +89,9 @@
         <RadioGroup
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-medium"
             android:layout_marginLeft="@dimen/text_margin"
             android:layout_marginRight="@dimen/text_margin"
+            android:fontFamily="sans-serif-medium"
             android:orientation="horizontal">
 
             <RadioButton
@@ -128,17 +128,17 @@
         <RadioGroup
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-medium"
             android:layout_marginLeft="@dimen/text_margin"
             android:layout_marginRight="@dimen/text_margin"
+            android:fontFamily="sans-serif-medium"
             android:orientation="vertical">
 
             <RadioButton
                 android:id="@+id/id_yes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-smallcaps"
                 android:checked="true"
+                android:fontFamily="sans-serif-smallcaps"
                 android:text="@string/yes"
                 android:textSize="@dimen/text_size" />
 
@@ -151,6 +151,25 @@
                 android:textSize="@dimen/text_size" />
 
         </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:fontFamily="sans-serif-smallcaps"
+            android:padding="@dimen/padding"
+            android:text="@string/question_4"
+            android:textSize="@dimen/text_size" />
+
+        <EditText
+            android:id="@+id/id_language"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:inputType="textCapCharacters"
+            android:padding="@dimen/padding" />
 
         <Button
             android:layout_width="wrap_content"
