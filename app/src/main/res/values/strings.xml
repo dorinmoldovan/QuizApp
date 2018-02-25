@@ -26,4 +26,21 @@
     <string name="adb">ADB (Android Debug Bridge)</string>
     <string name="question_6">6. Where are the layouts placed in Android?</string>
     <string name="layout_folder">the layout folder</string>
+    <string name="question_7">7. When was Android released?</string>
+    <string name="year_2008">2008</string>
+    <string name="year_2014">2014</string>
+    <string name="year_2018">2018</string>
+    <string name="question_8">8. Which is the best approach in Android between Serializable and Parcelable?</string>
+    <string name="serializable">Serializable</string>
+    <string name="parcelable">Parcelable</string>
+    <string name="question_9">9. Who is the founder of Android?</string>
+    <string name="andy_rubin">Andy Rubin</string>
+    <string name="brendan_eich">Brendan Eich</string>
+    <string name="james_gosling">James Gosling</string>
+    <string name="question_10">10. What are the four essential states of an activity?</string>
+    <string name="active">Active</string>
+    <string name="paused">Paused</string>
+    <string name="stopped">Stopped</string>
+    <string name="destroyed">Destroyed</string>
+    <string name="finished">Finished</string>
 </resources>

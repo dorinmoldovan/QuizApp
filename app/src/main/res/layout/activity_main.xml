@@ -232,6 +232,193 @@
             android:entries="@array/spinnerItems"
             android:padding="@dimen/padding" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:fontFamily="sans-serif-smallcaps"
+            android:padding="@dimen/padding"
+            android:text="@string/question_7"
+            android:textSize="@dimen/text_size" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:fontFamily="sans-serif-medium"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/id_2008"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="@string/year_2008"
+                android:textSize="@dimen/text_size" />
+
+            <RadioButton
+                android:id="@+id/id_2014"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="@string/year_2014"
+                android:textSize="@dimen/text_size" />
+
+            <RadioButton
+                android:id="@+id/id_2018"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="@string/year_2018"
+                android:textSize="@dimen/text_size" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:fontFamily="sans-serif-smallcaps"
+            android:padding="@dimen/padding"
+            android:text="@string/question_8"
+            android:textSize="@dimen/text_size" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:fontFamily="sans-serif-medium"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/id_serializable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="@string/serializable"
+                android:textSize="@dimen/text_size" />
+
+            <RadioButton
+                android:id="@+id/id_parcelable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="@string/parcelable"
+                android:textSize="@dimen/text_size" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:fontFamily="sans-serif-smallcaps"
+            android:padding="@dimen/padding"
+            android:text="@string/question_9"
+            android:textSize="@dimen/text_size" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:fontFamily="sans-serif-medium"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/id_andy_rubin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="@string/andy_rubin"
+                android:textSize="@dimen/text_size" />
+
+            <RadioButton
+                android:id="@+id/id_brendan_eich"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="@string/brendan_eich"
+                android:textSize="@dimen/text_size" />
+
+            <RadioButton
+                android:id="@+id/id_james_gosling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="@string/james_gosling"
+                android:textSize="@dimen/text_size" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:fontFamily="sans-serif-smallcaps"
+            android:padding="@dimen/padding"
+            android:text="@string/question_10"
+            android:textSize="@dimen/text_size" />
+
+        <CheckBox
+            android:id="@+id/active_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/active"
+            android:textSize="@dimen/text_size" />
+
+        <CheckBox
+            android:id="@+id/paused_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/paused"
+            android:textSize="@dimen/text_size" />
+
+        <CheckBox
+            android:id="@+id/stopped_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/stopped"
+            android:textSize="@dimen/text_size" />
+
+        <CheckBox
+            android:id="@+id/destroyed_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/destroyed"
+            android:textSize="@dimen/text_size" />
+
+        <CheckBox
+            android:id="@+id/finished_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/finished"
+            android:textSize="@dimen/text_size" />
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
