@@ -20,4 +20,10 @@
     <string name="basic">BASIC</string>
     <string name="corona">CORONA/LUA</string>
     <string name="phonegap">PHONEGAP</string>
+    <string name="question_5">5. Select the tools that are placed in an Android SDK.</string>
+    <string name="ddms">DDMS (Dalvik Debug Monitoring Services)</string>
+    <string name="aapt">AAPT (Android Asset Packaging Tool)</string>
+    <string name="adb">ADB (Android Debug Bridge)</string>
+    <string name="question_6">6. Where are the layouts placed in Android?</string>
+    <string name="layout_folder">the layout folder</string>
 </resources>
