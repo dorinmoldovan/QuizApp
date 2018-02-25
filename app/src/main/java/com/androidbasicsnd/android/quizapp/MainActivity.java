@@ -4,6 +4,7 @@ import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         computeScoreForQuestion1();
         computeScoreForQuestion2();
         computeScoreForQuestion3();
+        computeScoreForQuestion4();
         Context context = getApplicationContext();
         CharSequence text = getString(R.string.score_message_first_part) + score
                 + getString(R.string.score_message_second_part) + MAX_SCORE;
@@ -54,6 +56,25 @@ public class MainActivity extends AppCompatActivity {
     private void computeScoreForQuestion3() {
         RadioButton androidRadioButton = (RadioButton) findViewById(R.id.id_yes);
         if(androidRadioButton.isChecked()) {
+            score++;
+        }
+    }
+
+    private void computeScoreForQuestion4() {
+        EditText editText = (EditText) findViewById(R.id.id_language);
+        if(editText.getText().toString().equals(getString(R.string.java))) {
+            score++;
+        } else if(editText.getText().toString().equals(getString(R.string.kotlin))) {
+            score++;
+        } else if(editText.getText().toString().equals(getString(R.string.c))) {
+            score++;
+        } else if(editText.getText().toString().equals(getString(R.string.c_sharp))) {
+            score++;
+        } else if(editText.getText().toString().equals(getString(R.string.basic))) {
+            score++;
+        } else if(editText.getText().toString().equals(getString(R.string.corona))) {
+            score++;
+        } else if(editText.getText().toString().equals(getString(R.string.phonegap))) {
             score++;
         }
     }
