@@ -1,18 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.androidbasicsnd.android.quizapp.MainActivity">
+    android:fillViewport="true"
+    tools:context="MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryLight"
+        android:orientation="vertical">
 
-</android.support.constraint.ConstraintLayout>
+        <ImageView
+            android:id="@+id/id_ic_timelapse_black_48dp"
+            android:layout_width="@dimen/image_size"
+            android:layout_height="@dimen/image_size"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/layout_margin"
+            android:src="@drawable/ic_timelapse_black_48dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:fontFamily="sans-serif-smallcaps"
+            android:padding="@dimen/padding"
+            android:text="@string/question_1"
+            android:textSize="@dimen/text_size" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/id_google"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-smallcaps"
+                android:checked="true"
+                android:text="@string/google"
+                android:textSize="@dimen/text_size" />
+
+            <RadioButton
+                android:id="@+id/id_amazon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-smallcaps"
+                android:checked="false"
+                android:text="@string/amazon"
+                android:textSize="@dimen/text_size" />
+
+            <RadioButton
+                android:id="@+id/id_facebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-smallcaps"
+                android:checked="false"
+                android:text="@string/facebook"
+                android:textSize="@dimen/text_size" />
+
+            <RadioButton
+                android:id="@+id/id_microsoft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-smallcaps"
+                android:checked="false"
+                android:text="@string/microsoft"
+                android:textSize="@dimen/text_size" />
+
+        </RadioGroup>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/layout_margin"
+            android:onClick="computeScore"
+            android:text="@string/finish" />
+
+    </LinearLayout>
+
+</ScrollView>
