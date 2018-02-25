@@ -27,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
     public void computeScore(View v) {
         score = 0;
         computeScoreForQuestion1();
+        computeScoreForQuestion2();
+        computeScoreForQuestion3();
         Context context = getApplicationContext();
         CharSequence text = getString(R.string.score_message_first_part) + score
                 + getString(R.string.score_message_second_part) + MAX_SCORE;
@@ -38,6 +40,20 @@ public class MainActivity extends AppCompatActivity {
     private void computeScoreForQuestion1() {
         RadioButton googleRadioButton = (RadioButton) findViewById(R.id.id_google);
         if(googleRadioButton.isChecked()) {
+            score++;
+        }
+    }
+
+    private void computeScoreForQuestion2() {
+        RadioButton androidRadioButton = (RadioButton) findViewById(R.id.id_android);
+        if(androidRadioButton.isChecked()) {
+            score++;
+        }
+    }
+
+    private void computeScoreForQuestion3() {
+        RadioButton androidRadioButton = (RadioButton) findViewById(R.id.id_yes);
+        if(androidRadioButton.isChecked()) {
             score++;
         }
     }

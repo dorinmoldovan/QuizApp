@@ -8,4 +8,8 @@
     <string name="amazon">Amazon</string>
     <string name="facebook">Facebook</string>
     <string name="microsoft">Microsoft</string>
+    <string name="question_2">2. What is the symbol of Android?</string>
+    <string name="question_3">3. Can you create an activity using Android without a user interface?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
 </resources>
