@@ -76,6 +76,82 @@
 
         </RadioGroup>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:fontFamily="sans-serif-smallcaps"
+            android:padding="@dimen/padding"
+            android:text="@string/question_2"
+            android:textSize="@dimen/text_size" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/id_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:drawableRight="@drawable/ic_home_black_48dp" />
+
+            <RadioButton
+                android:id="@+id/id_android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_android_black_48dp" />
+
+            <RadioButton
+                android:id="@+id/id_sun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_wb_sunny_black_48dp" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:fontFamily="sans-serif-smallcaps"
+            android:padding="@dimen/padding"
+            android:text="@string/question_3"
+            android:textSize="@dimen/text_size" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/id_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-smallcaps"
+                android:checked="true"
+                android:text="@string/yes"
+                android:textSize="@dimen/text_size" />
+
+            <RadioButton
+                android:id="@+id/id_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="@string/no"
+                android:textSize="@dimen/text_size" />
+
+        </RadioGroup>
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
