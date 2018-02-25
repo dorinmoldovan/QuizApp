@@ -4,8 +4,10 @@ import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -31,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
         computeScoreForQuestion2();
         computeScoreForQuestion3();
         computeScoreForQuestion4();
+        computeScoreForQuestion5();
+        computeScoreForQuestion6();
         Context context = getApplicationContext();
         CharSequence text = getString(R.string.score_message_first_part) + score
                 + getString(R.string.score_message_second_part) + MAX_SCORE;
@@ -75,6 +79,23 @@ public class MainActivity extends AppCompatActivity {
         } else if(editText.getText().toString().equals(getString(R.string.corona))) {
             score++;
         } else if(editText.getText().toString().equals(getString(R.string.phonegap))) {
+            score++;
+        }
+    }
+
+    private void computeScoreForQuestion5() {
+        CheckBox ddmsCheckBox = (CheckBox) findViewById(R.id.ddms_checkbox);
+        CheckBox aaptCheckBox = (CheckBox) findViewById(R.id.aapt_checkbox);
+        CheckBox adbCheckBox = (CheckBox) findViewById(R.id.adb_checkbox);
+
+        if(ddmsCheckBox.isChecked() && aaptCheckBox.isChecked() && adbCheckBox.isChecked()) {
+            score++;
+        }
+    }
+
+    private void computeScoreForQuestion6() {
+        Spinner spinner = (Spinner) findViewById(R.id.id_layouts);
+        if(spinner.getSelectedItem().toString().equals(getString(R.string.layout_folder))) {
             score++;
         }
     }

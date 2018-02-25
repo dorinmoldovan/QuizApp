@@ -171,6 +171,67 @@
             android:inputType="textCapCharacters"
             android:padding="@dimen/padding" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:fontFamily="sans-serif-smallcaps"
+            android:padding="@dimen/padding"
+            android:text="@string/question_5"
+            android:textSize="@dimen/text_size" />
+
+        <CheckBox
+            android:id="@+id/ddms_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/ddms"
+            android:textSize="@dimen/text_size" />
+
+        <CheckBox
+            android:id="@+id/aapt_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/aapt"
+            android:textSize="@dimen/text_size" />
+
+        <CheckBox
+            android:id="@+id/adb_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/adb"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:fontFamily="sans-serif-smallcaps"
+            android:padding="@dimen/padding"
+            android:text="@string/question_6"
+            android:textSize="@dimen/text_size" />
+
+        <Spinner
+            android:id="@+id/id_layouts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginRight="@dimen/text_margin"
+            android:fontFamily="sans-serif-smallcaps"
+            android:drawSelectorOnTop="true"
+            android:entries="@array/spinnerItems"
+            android:padding="@dimen/padding" />
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

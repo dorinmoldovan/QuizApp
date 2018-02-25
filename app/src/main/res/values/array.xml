@@ -1,0 +1,7 @@
+<resources>
+    <string-array name="spinnerItems">
+        <item>the drawable folder</item>
+        <item>the layout folder</item>
+        <item>the values folder</item>
+    </string-array>
+</resources>
