@@ -130,8 +130,10 @@ public class MainActivity extends AppCompatActivity {
         CheckBox pausedCheckBox = (CheckBox) findViewById(R.id.paused_checkbox);
         CheckBox stoppedCheckBox = (CheckBox) findViewById(R.id.stopped_checkbox);
         CheckBox destroyedCheckBox = (CheckBox) findViewById(R.id.destroyed_checkbox);
+        CheckBox finishedCheckBox = (CheckBox) findViewById(R.id.finished_checkbox);
         if(activeCheckBox.isChecked() && pausedCheckBox.isChecked()
-                && stoppedCheckBox.isChecked() && destroyedCheckBox.isChecked()) {
+                && stoppedCheckBox.isChecked() && destroyedCheckBox.isChecked() &&
+                !finishedCheckBox.isChecked()) {
             score++;
         }
     }
