@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Quiz App</string>
     <string name="score_message_first_part">Congratulations !!! Your score is&#160;</string>
-    <string name="score_message_second_part">&#160; out of &#160;</string>
+    <string name="score_message_second_part">&#160; out of &#160; 10</string>
     <string name="finish">Finish</string>
     <string name="question_1">1. What company developed Android?</string>
     <string name="google">Google</string>
