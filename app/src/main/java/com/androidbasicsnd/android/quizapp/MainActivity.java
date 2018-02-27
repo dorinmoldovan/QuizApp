@@ -12,7 +12,6 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static final int MAX_SCORE = 10;
     private int score = 0;
 
     @Override
@@ -41,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         computeScoreForQuestion10();
         Context context = getApplicationContext();
         CharSequence text = getString(R.string.score_message_first_part) + score
-                + getString(R.string.score_message_second_part) + MAX_SCORE;
+                + getString(R.string.score_message_second_part);
         int duration = Toast.LENGTH_SHORT;
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
@@ -70,19 +69,19 @@ public class MainActivity extends AppCompatActivity {
 
     private void computeScoreForQuestion4() {
         EditText editText = (EditText) findViewById(R.id.id_language);
-        if(editText.getText().toString().equals(getString(R.string.java))) {
+        if(editText.getText().toString().equalsIgnoreCase(getString(R.string.java))) {
             score++;
-        } else if(editText.getText().toString().equals(getString(R.string.kotlin))) {
+        } else if(editText.getText().toString().equalsIgnoreCase(getString(R.string.kotlin))) {
             score++;
-        } else if(editText.getText().toString().equals(getString(R.string.c))) {
+        } else if(editText.getText().toString().equalsIgnoreCase(getString(R.string.c))) {
             score++;
-        } else if(editText.getText().toString().equals(getString(R.string.c_sharp))) {
+        } else if(editText.getText().toString().equalsIgnoreCase(getString(R.string.c_sharp))) {
             score++;
-        } else if(editText.getText().toString().equals(getString(R.string.basic))) {
+        } else if(editText.getText().toString().equalsIgnoreCase(getString(R.string.basic))) {
             score++;
-        } else if(editText.getText().toString().equals(getString(R.string.corona))) {
+        } else if(editText.getText().toString().equalsIgnoreCase(getString(R.string.corona))) {
             score++;
-        } else if(editText.getText().toString().equals(getString(R.string.phonegap))) {
+        } else if(editText.getText().toString().equalsIgnoreCase(getString(R.string.phonegap))) {
             score++;
         }
     }
